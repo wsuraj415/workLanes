@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WorkLane</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="dark-bg">
+
+    <!-- 🔥 NAVBAR -->
+    <nav class="navbar-custom">
+        <div class="nav-inner">
+
+            <!-- LEFT: ONLY LOGO -->
+            <div class="nav-left">
+                <h2 class="brand-logo">WORKLANE</h2>
+            </div>
+
+            <!-- RIGHT: ALL BUTTONS + ICONS -->
+            <div class="nav-right">
+
+                <!-- MENU BUTTONS -->
+                <div class="nav-links">
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Post Job</a>
+                    <a href="#">My Work</a>
+                    <a href="/about">About Us</a>
+                    <a href="#">Messages</a>
+                </div>
+
+                <!-- NOTIFICATION -->
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="badge">+1</span>
+                </div>
+
+                <!-- PROFILE -->
+                <img src="https://i.pravatar.cc/40" class="profile-img">
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- 🎥 HERO -->
+    <section class="hero">
+
+        <video autoplay muted loop class="hero-video">
+            <source src="/cover1.mp4" type="video/mp4">
+
+        </video>
+
+        <!-- DARK OVERLAY -->
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content text-center">
+            <h1>Hire Top Freelancers</h1>
+            <p>Get your work done faster with skilled professionals</p>
+
+            <!-- 🔍 SEARCH FIXED -->
+            <div class="search-container mt-4">
+                <input autofocus type="text" placeholder="Search services...">
+                <button>Explore Jobs</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- 🔥 SERVICES -->
+    <section class="services-section">
+        <h2 id="pser">Popular Services</h2>
+
+        <div class="services-slider">
+
+            <!-- Repeat cards -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+                <h5>Web Development</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0">
+                <h5>Graphic Design</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                <h5>App Development</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+                <h5>AI Development</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+                <h5>Digital Marketing</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+                <h5>SEO Optimization</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+                <h5>Content Writing</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a">
+                <h5>Video Editing</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40">
+                <h5>UI/UX Design</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9">
+                <h5>Data Analysis</h5>
+            </div>
+
+            <!-- duplicate to reach ~20 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+                <h5>Frontend Dev</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+                <h5>Copywriting</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+                <h5>Business Consulting</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+                <h5>Cyber Security</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                <h5>Mobile Apps</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+                <h5>Email Marketing</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9">
+                <h5>Machine Learning</h5>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a">
+                <h5>Animation</h5>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🔥 FREELANCE MARKETPLACE -->
+
+
+    <!-- 🔥 CARDS GRID -->
+    <section class="marketplace">
+
+        <div class="container mt-5">
+
+            <h2 class="section-title mb-4">Explore Services</h2>
+
+            <!-- SEARCH -->
+            <div class="market-search mb-3">
+                <input type="text" placeholder="Search services...">
+                <button>Search</button>
+            </div>
+
+            <!-- CATEGORY -->
+            <div class="category-bar mb-3">
+                <button>Web Dev</button>
+                <button>App Dev</button>
+                <button>Video Editing</button>
+                <button>UI/UX Design</button>
+                <button>AI</button>
+                <button>Web Dev</button>
+                <button>App Dev</button>
+                <button>Video Editing</button>
+                <button>Web Dev</button>
+                <button>App Dev</button>
+                <button>AI</button>
+            </div>
+
+            <!-- FILTER -->
+            <div class="filter-bar mb-4">
+                <button>Service Options</button>
+                <button>Budget</button>
+                <button>Delivery Time</button>
+                <button>Rating</button>
+
+            </div>
+
+            <!-- 🔥 CARDS -->
+            <div class="row">
+
+                <% services.forEach(service=> { %>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="service-card-2">
+
+                            <img src="<%= service.img %>">
+
+                            <div class="card-body">
+
+                                <h5>
+                                    <%= service.title %>
+                                </h5>
+                                <p class="price">
+                                    <%= service.price %>
+                                </p>
+                                <p class="desc">
+                                    <%= service.desc %>
+                                </p>
+                                <div class="users">
+                                    <img src="https://i.pravatar.cc/30?img=1">
+                                    <img src="https://i.pravatar.cc/30?img=2">
+                                    <img src="https://i.pravatar.cc/30?img=3">
+                                    <span>12+</span>
+                                </div>
+
+                                <a href="<%= service.link %>" class="details-btn">
+                                    View Details
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <% }) %>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- 🚀 CTA -->
+    <section class="container text-center mt-5">
+        <!-- <h2>Start your freelancing journey today</h2> -->
+        <!-- <button class="btn btn-warning mt-3 px-5">Join Now</button> -->
+    </section>
+    <!-- review -->
+    <section class="stats-section">
+
+        <div class="container">
+
+            <!-- HEADING -->
+            <h2 class="section-title">Why WorkLane?</h2>
+            <p class="section-subtitle">
+                We connect businesses with top freelancers worldwide. Fast, secure, and reliable.
+            </p>
+
+            <!-- STATS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h3 class="counter" data-target="10000">0</h3>
+                    <p>Freelancers</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 class="counter" data-target="5000">0</h3>
+                    <p>Jobs Posted</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 class="counter" data-target="2000">0</h3>
+                    <p>Companies</p>
+                </div>
+
+            </div>
+
+            <!-- FEATURES -->
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h4>Fast Hiring</h4>
+                    <p>Hire skilled freelancers instantly and accelerate your projects.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>Secure Payments</h4>
+                    <p>Safe and reliable transactions with full protection.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-star"></i>
+                    <h4>Top Talent</h4>
+                    <p>Work with verified professionals across multiple domains.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- 🔥 FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LEFT: BRAND -->
+            <div class="footer-brand">
+                <h2>WORKLANE</h2>
+                <p>
+                    Connecting businesses with top freelancers worldwide.
+                    Fast, secure, and reliable platform for modern work.
+                </p>
+
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="/about">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#">Browse Jobs</a>
+                <a href="#">Post a Job</a>
+                <a href="#">Freelancers</a>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Get latest jobs & updates</p>
+
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Enter email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            <p>© 2026 WorkLane. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute("data-target");
+                const current = +counter.innerText;
+
+                const increment = target / 100;
+
+                if (current < target) {
+                    counter.innerText = Math.ceil(current + increment);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target.toLocaleString() + "+";
+                }
+            };
+
+            updateCount();
+        });
+    </script>
+</body>
+
+</html>

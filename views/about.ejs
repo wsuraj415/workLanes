@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About | WorkLane</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: white;
+    overflow-x: hidden;
+}
+
+/* VIDEO */
+.video-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* OVERLAY */
+.overlay {
+    background: rgba(0,0,0,0.75);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.navbar h2 {
+    color: #ffb700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar h2:hover {
+    transform: scale(1.2);
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #ffb700;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+.hero h1 {
+    font-size: 52px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    color: #ccc;
+}
+
+/* LINE ANIMATION */
+.line-loader {
+    width: 220px;
+    height: 3px;
+    background: linear-gradient(90deg, #ffb700, transparent);
+    margin: 20px auto;
+    animation: moveLine 2s linear infinite;
+}
+
+@keyframes moveLine {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
+}
+
+/* SECTION */
+.section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    width: 300px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: brightness(0.8);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    color: #ddd;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #ffb700;
+    color: black;
+}
+
+/* ABOUT FLEX */
+.about-flex {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text p {
+    margin-top: 15px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.about-img img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.8);
+    margin-top: 50px;
+}
+h2{
+
+    padding-bottom: 18px;
+}
+.dev-card img {
+    height: 20px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;   
+    /* background: #ffb700; */
+
+    padding: 2px;          
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO -->
+<video autoplay muted loop class="video-bg">
+    <source src="https://cdn.pixabay.com/video/2023/01/19/147176-790996281_large.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>WorkLane</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>About WorkLane 🚀</h1>
+    <p>
+        WorkLane is a powerful freelance hiring platform built to connect clients with talented professionals.
+        From developers to designers, we make collaboration smooth, fast, and efficient.
+    </p>
+</div>
+
+<div class="line-loader"></div>
+
+<!-- ABOUT -->
+<div class="section about-flex">
+
+    <div class="about-text">
+        <h2>🔥 What is WorkLane?</h2>
+        <p>
+            WorkLane bridges the gap between freelancers and clients by providing a seamless platform
+            where work meets talent. It allows users to hire experts, manage projects, and collaborate
+            in real-time.
+        </p>
+
+        <p>
+            Our platform focuses on simplicity, speed, and trust. Whether you are a student,
+            startup founder, or business owner — WorkLane helps you get things done.
+        </p>
+    </div>
+
+    <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+    </div>
+
+</div>
+
+<!-- FEATURES -->
+<div class="section">
+    <h2>✨ Features</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4">
+            <h3>Hire Freelancers</h3>
+            <p>Find skilled professionals instantly and start working.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+            <h3>Real-Time Collaboration</h3>
+            <p>Communicate and manage work efficiently.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            <h3>Secure Platform</h3>
+            <p>Your data and payments are fully protected.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- WHY CHOOSE -->
+<div class="section">
+    <h2>💡 Why Choose WorkLane?</h2>
+
+    <div class="grid">
+
+        <div class="card ">
+            <img id="one " src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+            <h3>Fast Hiring</h3>
+            <p>Get the right person in minutes.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+            <h3>Trusted Talent</h3>
+            <p>Work with verified freelancers.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0">
+            <h3>24/7 Support</h3>
+            <p>We are always here for you.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- DEVELOPERS -->
+<div class="section">
+    <h2>👨‍💻 Developers</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="/suraj1.png">
+            <h3>Suraj Waghmare</h3>
+            <p>BCA 3rd Year Student<br>Lovely Professional University, Phagwara Punjab</p>
+        </div>
+
+        <div class="card">
+            <img src="/swapnil.png">
+            <h3>Swapnil Durgam</h3>
+            <p>BCA 3rd Year Student<br>Lovely Professional University, Phagwara Punjab</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>© 2026 WorkLane | Built for Freelancers</p>
+</div>
+
+</div>
+
+<!-- SCROLL ANIMATION -->
+<script>
+window.addEventListener("scroll", () => {
+    document.querySelectorAll(".card").forEach(card => {
+        let pos = card.getBoundingClientRect().top;
+        let screen = window.innerHeight;
+
+        if(pos < screen - 100){
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
+    });
+});
+</script>
+
+</body>
+</html>

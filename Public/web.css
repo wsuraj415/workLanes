@@ -1,0 +1,175 @@
+body.dark-bg {
+    background: #0b0b0b;
+    color: #fff;
+}
+
+/* HEADER */
+.page-title {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.page-sub {
+    color: #aaa;
+}
+
+/* GRID FIX */
+.row > div {
+    display: flex;
+}
+
+/* CARD */
+.dev-card {
+    width: 100%;
+    background: linear-gradient(145deg, #111, #0a0a0a);
+    border-radius: 16px;
+    padding: 22px;
+    border: 1px solid #222;
+    position: relative;
+    transition: 0.3s;
+}
+
+.dev-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255,183,0,0.25);
+}
+
+/* HEART */
+.save-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #777;
+    cursor: pointer;
+}
+
+.save-icon:hover {
+    color: #ff4d4d;
+}
+
+/* HEADER */
+.dev-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.dev-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dev-header p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* DESC */
+.dev-desc {
+    color: #bbb;
+    margin: 10px 0;
+}
+
+/* INFO */
+.dev-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* RATING */
+.rating {
+    color: #ffb700;
+    font-size: 14px;
+}
+
+/* STATUS */
+.status.active {
+    color: #00ff88;
+    font-size: 13px;
+}
+
+/* WORK */
+.work-done {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* SKILLS */
+.skills {
+    margin-top: 10px;
+}
+
+.skills span {
+    background: #222;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* SOCIAL */
+.social {
+    margin-top: 10px;
+}
+
+.social i {
+    margin-right: 12px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #ffb700;
+}
+
+/* BUTTON */
+.hire-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(45deg, #ffb700, #ff8c00);
+    font-weight: bold;
+}
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+/* PRICE */
+.price {
+    color: #ffb700;
+    font-weight: 600;
+}
+
+/* RATING */
+.rating {
+    color: #ddd;
+}
+
+/* STATUS */
+.status {
+    color: #00ff88;
+    font-size: 13px;
+}
+.dev-header h4 {
+    margin-bottom: 2px;   /* 🔥 gap kam karega */
+    line-height: 1.2;
+}
+
+.dev-header p {
+    margin: 0;            /* 🔥 default margin hata diya */
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.2;
+}
+h1:hover {
+    color: #ff4d4d;
+    transition: 0.3s ease;
+}

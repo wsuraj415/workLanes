@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Editors | WorkLane</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/web.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    /* ❤️ HEART ICON */
+.heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.heart:hover {
+    color: #ff4d4d;
+    transform: scale(1.2);
+}
+
+/* Active (liked) */
+.heart.active {
+    color: #ff4d4d;
+}
+
+/* Card relative hona chahiye */
+.dev-card {
+    position: relative;
+}
+.text-muted {
+    color: #aaa !important;
+}
+h1:hover {
+    color: #ff4d4d;
+    transition: 0.3s ease;
+}
+</style>
+</head>
+<body class="dark-bg">
+
+<!-- 🔥 NAVBAR -->
+
+
+<%
+const editors = [
+  {
+    name: "Rohan Verma",
+    role: "YouTube Editor",
+    price: "₹3K–₹10K",
+    rating: "4.9",
+    reviews: 210,
+    active: "Active 2 hours ago",
+    projects: "150+ Projects",
+    skills: ["Premiere", "YouTube", "Color"],
+    img: "https://i.pravatar.cc/100?img=11"
+  },
+  {
+    name: "Sneha Arora",
+    role: "Reels Editor",
+    price: "₹2K–₹8K",
+    rating: "4.8",
+    reviews: 180,
+    active: "Active 5 hours ago",
+    projects: "120+ Projects",
+    skills: ["Reels", "CapCut", "Shorts"],
+    img: "https://i.pravatar.cc/100?img=12"
+  },
+  {
+    name: "Aditya Mehta",
+    role: "Cinematic Editor",
+    price: "₹5K–₹15K",
+    rating: "4.9",
+    reviews: 300,
+    active: "Active 1 day ago",
+    projects: "200+ Projects",
+    skills: ["Cinematic", "DaVinci", "Story"],
+    img: "https://i.pravatar.cc/100?img=13"
+  },
+  {
+    name: "Kunal Shah",
+    role: "Wedding Editor",
+    price: "₹6K–₹18K",
+    rating: "4.7",
+    reviews: 140,
+    active: "Active 6 hours ago",
+    projects: "110+ Projects",
+    skills: ["Wedding", "Transitions"],
+    img: "https://i.pravatar.cc/100?img=14"
+  },
+  {
+    name: "Anjali Kapoor",
+    role: "Social Media Editor",
+    price: "₹3K–₹9K",
+    rating: "4.8",
+    reviews: 190,
+    active: "Active 3 hours ago",
+    projects: "130+ Projects",
+    skills: ["Reels", "Ads"],
+    img: "https://i.pravatar.cc/100?img=15"
+  },
+  {
+    name: "Vikram Rao",
+    role: "Corporate Editor",
+    price: "₹7K–₹20K",
+    rating: "4.9",
+    reviews: 250,
+    active: "Active 8 hours ago",
+    projects: "170+ Projects",
+    skills: ["Corporate", "Branding"],
+    img: "https://i.pravatar.cc/100?img=16"
+  },
+  {
+    name: "Neeraj Singh",
+    role: "Gaming Editor",
+    price: "₹4K–₹12K",
+    rating: "4.7",
+    reviews: 160,
+    active: "Active 10 hours ago",
+    projects: "140+ Projects",
+    skills: ["Gaming", "Montage"],
+    img: "https://i.pravatar.cc/100?img=17"
+  }
+];
+%>
+
+<!-- 🔥 PAGE HEADER -->
+<section class="container text-center mt-5">
+    <h1>Hire Top Video Editors</h1>
+    <p class="text-muted">
+        Find professional editors for reels, YouTube, ads & cinematic videos
+    </p>
+</section>
+
+<!-- 🔥 CARDS -->
+<section class="container mt-4">
+    <div class="row">
+
+        <% editors.forEach(dev => { %>
+
+        <div class="col-md-4 mb-4">
+            <div class="dev-card">
+
+                <!-- ❤️ SAVE -->
+                <i class="fa-regular fa-heart heart"></i>
+
+                <!-- PROFILE -->
+                <div class="dev-header">
+                    <img src="<%= dev.img %>" class="profile">
+                    <div>
+                        <h4><%= dev.name %></h4>
+                        <p><%= dev.role %></p>
+                    </div>
+                </div>
+
+                <!-- DESC -->
+                <p class="desc">
+                    Professional video editing with high-quality output.
+                </p>
+
+                <!-- INFO -->
+                <div class="dev-info">
+                    <div class="price">💰 <%= dev.price %></div>
+                    <div class="rating">⭐ <%= dev.rating %> (<%= dev.reviews %> reviews)</div>
+                    <div class="status">● <%= dev.active %></div>
+                </div>
+
+                <!-- PROJECT -->
+                <p class="projects"><%= dev.projects %></p>
+
+                <!-- SKILLS -->
+                <div class="skills">
+                    <% dev.skills.forEach(skill => { %>
+                        <span><%= skill %></span>
+                    <% }) %>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="social">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <!-- BUTTON -->
+                <button class="btn btn-warning w-100 mt-3">Hire Now</button>
+
+            </div>
+        </div>
+
+        <% }) %>
+
+    </div>
+</section>
+
+<!-- 🔥 FOOTER -->
+
+
+</body>
+</html>

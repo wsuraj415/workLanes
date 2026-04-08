@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Developers | WorkLane</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/home.css">
+<link rel="stylesheet" href="/web.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="dark-bg">
+
+<!-- ✅ NAVBAR -->
+
+
+<div class="container mt-5">
+
+    <!-- 🔥 HEADER -->
+    <div class="text-center mb-5">
+        <h1 class="page-title">Hire Top Web Developers</h1>
+        <p class="page-sub">Work with verified experts for websites, apps & scalable systems</p>
+    </div>
+
+    <!-- 🔥 CARDS -->
+    <div class="row g-4">
+
+<% const devs = [
+{
+name:"Rahul Sharma",
+role:"Full Stack Developer",
+img:"https://i.pravatar.cc/100?img=1",
+price:"₹5K–₹15K",
+time:"3–7 Days",
+rating:"4.9",
+reviews:"120",
+skills:["React","Node","MongoDB","API"],
+projects:"180+ Projects",
+active:"Active 2 hours ago"
+},
+{
+name:"Aman Verma",
+role:"Frontend Developer",
+img:"https://i.pravatar.cc/100?img=2",
+price:"₹4K–₹12K",
+time:"2–5 Days",
+rating:"4.8",
+reviews:"98",
+skills:["HTML","CSS","Bootstrap","UI"],
+projects:"95+ Projects",
+active:"Active 6 hours ago"
+},
+{
+name:"Priya Mehta",
+role:"UI/UX Designer",
+img:"https://i.pravatar.cc/100?img=3",
+price:"₹6K–₹18K",
+time:"4–8 Days",
+rating:"4.9",
+reviews:"150",
+skills:["Figma","UX","Wireframe","Design"],
+projects:"210+ Projects",
+active:"Active 1 day ago"
+},
+{
+name:"Karan Singh",
+role:"MERN Developer",
+img:"https://i.pravatar.cc/100?img=4",
+price:"₹7K–₹20K",
+time:"5–10 Days",
+rating:"4.7",
+reviews:"87",
+skills:["MongoDB","Express","React","Node"],
+projects:"130+ Projects",
+active:"Active 3 hours ago"
+},
+{
+name:"Neha Kapoor",
+role:"React Developer",
+img:"https://i.pravatar.cc/100?img=5",
+price:"₹5K–₹14K",
+time:"3–6 Days",
+rating:"4.9",
+reviews:"132",
+skills:["React","Redux","JS","UI"],
+projects:"170+ Projects",
+active:"Active 8 hours ago"
+},
+{
+name:"Arjun Patel",
+role:"Backend Developer",
+img:"https://i.pravatar.cc/100?img=6",
+price:"₹6K–₹16K",
+time:"4–9 Days",
+rating:"4.8",
+reviews:"110",
+skills:["Node","API","SQL","Auth"],
+projects:"140+ Projects",
+active:"Active 5 hours ago"
+},
+{
+name:"Ritika Jain",
+role:"WordPress Expert",
+img:"https://i.pravatar.cc/100?img=7",
+price:"₹3K–₹10K",
+time:"2–5 Days",
+rating:"4.7",
+reviews:"75",
+skills:["WordPress","SEO","Themes","Plugins"],
+projects:"90+ Projects",
+active:"Active 1 day ago"
+},
+{
+name:"Dev Malhotra",
+role:"Full Stack Engineer",
+img:"https://i.pravatar.cc/100?img=8",
+price:"₹8K–₹22K",
+time:"5–12 Days",
+rating:"5.0",
+reviews:"160",
+skills:["Next.js","Node","Cloud","DB"],
+projects:"250+ Projects",
+active:"Active 2 hours ago"
+}
+]; %>
+
+       <% devs.forEach(dev => { %>
+
+<div class="col-md-4">
+    <div class="dev-card">
+
+        <i class="fa-regular fa-heart save-icon"></i>
+
+        <div class="dev-header">
+            <img src="<%= dev.img %>">
+            <div>
+                <h5><%= dev.name %></h5>
+                <p class="role"><%= dev.role %></p>
+            </div>
+        </div>
+
+        <p class="dev-desc">
+            High-quality web solutions with modern technologies and scalable architecture.
+        </p>
+
+        <!-- 🔥 INLINE INFO (FIXED ALIGNMENT) -->
+       <div class="dev-info">
+
+    <div class="price">
+        💰 <%= dev.price %>
+    </div>
+
+    <div class="rating">
+        ⭐ <%= dev.rating %> (<%= dev.reviews %> reviews)
+    </div>
+
+    <div class="status">
+        ● <%= dev.active %>
+    </div>
+
+</div>
+
+        <div class="work-done">
+            <%= dev.projects %>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="skills">
+            <% dev.skills.forEach(skill => { %>
+                <span><%= skill %></span>
+            <% }) %>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="social">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <button class="hire-btn">Hire Now</button>
+
+    </div>
+</div>
+
+<% }) %>
+    </div>
+
+</div>
+
+<!-- ✅ FOOTER -->
+
+
+</body>
+</html>
